@@ -1,10 +1,11 @@
 # test-internet
-One time check if Internet is reachable and log if not using `curl`
+One time check if a Web site is reachable and log if not.
 
 Typically called using `cron` on a regular basis
 
-Log result using `syslog`
+Check Web site using `curl`
+Log unreachable result using `syslog`
 
-Host to be tested as well as port are configurable.
+Host to be tested and port (eg 8000 instead of 80)  are configurable.
 
 Git source: [https://github.com/dessyd/test-internet.git](https://github.com/dessyd/test-internet.git ) 
