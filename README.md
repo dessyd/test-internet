@@ -9,3 +9,5 @@ Log unreachable result using `syslog`
 Host to be tested and port (eg 8000 instead of 80)  are configurable.
 
 Git source: [https://github.com/dessyd/test-internet.git](https://github.com/dessyd/test-internet.git ) 
+
+Tx.
