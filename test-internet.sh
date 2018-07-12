@@ -14,13 +14,13 @@ hash logger 2>/dev/null || { echo >&2 "I require logger but it's not installed. 
 
 if ! $(curl --output /dev/null --silent --head --fail http://$HOST:$PORT)
 then
-  logger -i -p $FACILITY -t $TAG "Internet Unreachable"
   touch .down
+  logger -i -p $FACILITY -t $TAG "Internet Unreachable"
 else
   if [ -e .down ]
   then
     rm .down
-	logger -i -p $FACILITY -t $TAG "Internet Restored"
+    logger -i -p $FACILITY -t $TAG "Internet Restored"
   fi
 fi
 
