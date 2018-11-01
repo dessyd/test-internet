@@ -4,10 +4,12 @@
 #
 # Must be called in a cron job
 #
+
 HOST="www.dessy.be"
 PORT=80
 FACILITY="syslog.warn"
 TAG="network"
+
 #
 # Store Flag in the same dorectory as the script
 #
@@ -27,6 +29,3 @@ else
     logger -i -p $FACILITY -t $TAG "Internet Restored"
   fi
 fi
-
-
-
